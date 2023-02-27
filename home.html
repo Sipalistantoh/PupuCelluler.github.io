@@ -1,0 +1,746 @@
+<html lang="in">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<title>Pupu Celluler</title>
+<style>
+body,html {
+	width:100%;
+	overflow-x:hidden;
+	height:100%;
+}
+body {
+	background:#fff;
+	padding:0;
+	margin:0;
+}
+#Pusat {
+	margin-top:13%;	background-image:url(https://i.postimg.cc/N03q9yRJ/20230226-170912.png);
+	background-size:100% 100%;
+	;
+}
+.Persegi {
+	background:white;
+	border-radius:20px;
+	box-shadow:5px 5px 5px 0px rgba(18,17,17,0.117);
+	height:auto;
+}
+.white {
+	background:white;
+}
+.white2 {
+	width:90%;
+	margin-left:5%;
+	border:1.5px solid rgba(18,17,17,0.117);
+	border-radius:10px;
+}
+.Padd {
+	padding:4%;
+}
+.Hr {
+	background:#f1f1f1;
+	width:100%;
+	height:2px;
+}
+a {
+	color:black;
+	cursor:none;
+	outline:none;
+	text-decoration:none;
+}
+.floatRight {
+	float:right;
+}
+.B-atas {
+	background:#1CB6AC;
+}
+#Nowrap {
+	white-space:nowrap;
+	overflow:auto;
+}
+.Fixed {
+	position:fixed;
+	left:0%;
+	top:0;
+	width:100%;
+	z-index:1;
+}
+.ikon-white {
+	color:white;
+}
+.B-atas {
+	padding-top:2.8%;
+	padding-bottom:4%;
+}
+.S-MI-2 {
+	position:relative;
+	top:2.8px;
+	margin-left:4%;
+	font-size:30px;
+}
+.imgs12 {
+	padding:0px;
+	margin-top:0px;
+	border-radius:8px;
+	margin-bottom:5px;
+	width:50%;
+	transition:0.3s;
+}
+.imgs12:hover {
+	width:45%;
+	background-color:#fff;
+	border-radius:10px;
+	box-shadow:5px 5px 5px 0px rgba(18,17,17,0.117);
+	transition:0.30s;
+}
+#tooltip3 {
+	position:relative;
+	display:inline-block;
+	border-radius:0px;
+	padding-bottom:4%;
+	padding-top:3%;
+	color:#1CB6AC;
+	margin-left:5%;
+	margin-right:5%;
+	width:22%;
+	font-size:12px;
+}
+#tooltip2 {
+	position:relative;
+	display:inline-block;
+	border-radius:0px;
+	padding:0px;
+	font-weight:bold;
+	margin-top:0px;
+	color:black;
+	margin-left:0px;
+	margin-right:0px;
+	width:24%;
+	font-size:12px;
+	margin-bottom:15px;
+}
+#tooltip2 a {
+	cursor:none;
+}
+.imgs11 {
+	padding:0px;
+	margin-top:0px;
+	border-radius:8px;
+	margin-bottom:5px;
+	width:55%;
+	transition:0.5s;
+}
+.imgs11:hover {
+	width:50%;
+	background-color:#fff;
+	border-radius:10px;
+	box-shadow:5px 5px 5px 0px rgba(18,17,17,0.117);
+	transition:0.5s;
+}
+.tabcontent {
+	display:none;
+}
+.customer {
+	background:#1CB6AC;
+	border-radius:5px;
+	border:none;
+	padding:5%;
+	width:auto;
+	font-weight:bold;
+}
+.customer span {
+	color:#fff;
+	width:100%;
+	top:0.8px;
+}
+</style>
+<style>  
+.slideshow-container {
+	max-width:100%;
+	position:relative;
+	margin:auto;
+}
+.dot {
+	height:7px;
+	width:7px;
+	margin:1px;
+	background-color:white;
+	border:0.4px solid grey;
+	border-radius:4px;
+	display:inline-block;
+	transition:background-color 0.6s ease;
+}
+.actives {
+	background-color:#1CB6AC;
+	border:0.4px solid white;
+	width:18px;
+}
+.fadel {
+	-webkit-animation-name:PUPUFadel;
+	-webkit-animation-duration:1.5s;
+	animation-name:PUPUFadel;
+	animation-duration:3.5s;
+}
+.fadel img {
+	height:140px;
+}
+@keyframes PUPUFadel {
+	0% {
+		position:relative;
+		right:-120%;
+	}
+	28% {
+		position:relative;
+		right:0%;
+	}
+	50% {
+		position:relative;
+		right:0%;
+	}
+	70% {
+		position:relative;
+		right:0%;
+	}
+	100% {
+		position:relative;
+		right:120%;
+	}
+}
+@keyframes PUPUidSucess {
+	0% {
+		background-color:hsl(200,20%,80%);
+	}
+	100% {
+		background-color:hsl(200,20%,95%);
+	}
+}
+</style>
+<style>
+.flamNone {
+	display:none;
+}
+.flamFloatRight {
+	float:right;
+}
+#flamPop {
+	position:fixed;
+	z-index:1;
+	background:white;
+	left:0;
+	bottom:-110%;
+	border-radius:20px 20px 0 0;
+	width:100%;
+	transition:0.4s;
+}
+#flamBShadow {
+	position:fixed;
+	background:rgba(0,0,0,0.4);
+	width:100%;
+	height:100%;
+	left:0;
+	bottom:0;
+}
+.flam-setting-2 {
+	position:relative;
+	top:6px;
+}
+h5 {
+	margin:0;
+	padding:0
+}
+.flamHr {
+	margin:2%;
+	margin-left:0;
+	margin-right:0;
+	padding:0;
+	;
+}
+form {
+	background-color:white;
+	width:100%;
+	height:44px;
+	border-radius:5px;
+	border:1.4px solid gray;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+input {
+	all:unset;
+	font:16px system-ui;
+	color:black;
+	height:100%;
+	width:100%;
+	padding:6px 10px;
+}
+::placeholder {
+	color:gray;
+	opacity:0.7;
+}
+svg {
+	color:gray;
+	fill:currentColor;
+	width:24px;
+	height:24px;
+	padding:10px;
+}
+button9 {
+	all:unset;
+	cursor:pointer;
+	width:44px;
+	height: 44px;
+}
+</style>
+<style>
+/*GESER SAMPING*/
+div.scrollmenu {
+	background-color:transparent;
+	overflow:auto;
+	white-space:nowrap;
+	margin-left:15px;
+	padding: 10px;
+}
+/*MENU SCROLL KESAMPING*/
+div.scrollmenu a {
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	border-radius: 10px;
+}
+/*LATAR GESER SAMPING*/
+.button22 {
+	font-size:11px;
+	text-decoration:none;
+	outline:none;
+	color:#fff;
+	background-color:#fff;
+	border:none;
+	border-radius:15px;
+	height:140px;
+	width:33%;
+	margin-right:10px;
+	margin-top:20px;
+	padding:0px;
+	box-shadow:0px 0px 6px -3px rgba(0,0,0,0.9);
+}
+.title__el__menarik {
+	color:rgb(73,73,73);
+	font-size:16px;
+	margin-bottom:8px;
+}
+.paragraph__el__update {
+	color:rgb(104,104,104);
+	font-size:10px;
+	margin-top:0;
+}
+.cards__header__menarik {
+	margin-top:10px;
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	gap:15px;
+}
+.card__body__menarik {
+	border-radius:4px;
+	background-color:#fff;
+	box-shadow:0 0 4px rgba(0,0,0,0.15);
+	height:240px;
+	position:relative;
+}
+.image--card--body--menarik {
+	object-fit:cover;
+	width:100%;
+	height:90px;
+	border-radius:4px 4px 0 0;
+}
+.text__card__body__menarik {
+	padding:5px 10px 20px;
+}
+.title__card__body__menarik {
+	margin:5;
+	color:rgb(73,73,73);
+	font-size:12px;
+}
+.paragraph__card__body__menarik {
+	margin:8px 0;
+	color:rgb(104,104,104);
+	font-size:10px;
+	letter-spacing:0.1px;
+	line-height:13px;
+}
+.link__card__body__menarik {
+	color:rgb(48,178,230);
+	text-decoration:none;
+	font-size:12px;
+	text-align:center;
+	display:block;
+	margin-top:16px;
+	font-weight:700;
+	letter-spacing:0.3px;
+	text-shadow:0 0 4px rgba(0,0,0,0.15);
+	position:absolute;
+	bottom:20px;
+	left:10px;
+	right:10px;
+}
+.image--game {
+	width:65px;
+	height:65px;
+	object-fit:cover;
+	border-radius:18px;
+	margin-top:-35px;
+}
+.deskripsi--card--game {
+	color:#ffff;
+	font-weight:620;
+}
+.link--open--game {
+	font-size:13px;
+	color:#ff742b;
+	background-color:#00897B;
+	padding: 2px 30px;
+}
+}
+</style>	
+</head>
+<body>
+<div class="Fixed Font">
+	<div class="Padd B-atas">
+		<small class="Font ikon-white"><b><img style="width: 40%;" src="https://i.postimg.cc/W3RCng6d/IMG-20230227-064017.png">
+		<img class="S-MI-2 B-white floatRight" src="https://i.postimg.cc/KYjfXFSh/20230226-215158.png" style="width: 23px;">
+		<img class="S-MI-2 B-white floatRight" src="https://i.postimg.cc/HkBzPnNt/20230226-215211.png" style="width: 24px;">
+		</b>
+		</small>
+	</div>
+</div>
+</div>
+<div id="Pusat">
+<div class="Padd">
+	<div class="Persegi">
+		<div class="Padd" style="padding: 5%;padding-bottom: 3%;">
+			<table class="Table">
+			<tbody>
+			<tr>
+				<td style="width: 10%;">
+					<img style="width: 100%;" src="https://i.postimg.cc/13029YKb/20230224_211910.png">
+				</td>
+				<td style="width: 60%;">
+					<a href="#">
+					<small style="color: #343434;position: relative;left: 5%;" class="Font">Saldo Mitra</small>
+					<h5 style="margin: 0;position: relative;left: 5%;" class="Font" id="saldo-user">{{saldo_user}}</h5>
+					</a>
+				</td>
+				<td style="width: 10%;">
+					<img style="margin-left:-40px;width: 100%;" src="https://i.postimg.cc/Dzsrk7mq/20230224_061424.png">
+				</td>
+				<td style="width: 60%;">
+					<a href="#">
+					<small style="color: #343434;position: relative;left: -40%;" class="Font">Point Mitra</small>
+					<h5 style="margin: 0;position: relative;left: -40%;" class="Font" id="saldo-user">{{saldo_user}}</h5>
+					</a>
+				</td>
+				</tbody>
+				</table>
+			</div>
+			<div class="Hr"></div>
+			<a href="#">
+			<div id="tooltip3">
+				<center>
+				<img class="imgs12" src="https://i.postimg.cc/vmKWCfKD/20230224_212215.png" style="border-radius:8px">
+				<br>TopUp Saldo</center>
+			</div>
+			</a>
+			<a href="#">
+			<div id="tooltip3">
+				<center>
+				<img class="imgs12" src="https://i.postimg.cc/XJfq1688/20230226-165650.png" style="border-radius:8px">
+				<br>Tarik Dana</center>
+			</div>
+			</a>
+			<a href="#">
+			<div id="tooltip3">
+				<center>
+				<img class="imgs12" src="https://i.postimg.cc/SsFjGxWR/20230226-165643.png" style="border-radius:8px">
+				<br>QRIS</center>
+			</div>
+			</a>
+		</div>
+	</div>
+	</tbody>
+	</table>
+</div>
+</div>
+</div>
+<div class="white2">
+<a href="#" style="text-decoration: none;color: black;">
+<table class="Table">
+<tbody>
+<tr>
+<td style="width: 5%;">
+	<img src="https://i.postimg.cc/9Q6jgWpq/20230226_173125.png" style="width: 35px;">
+</td>
+<td style="width: 65%;">
+	<small><b>Anda butuh bantuan?</small>
+</td>
+<td style="width: 40%;">
+	<a href="#">
+	<button class="customer">
+	<span>Hubungi Kami</span>
+	</button></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</a>
+</div>
+</div>
+</div>
+</br>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/pXqpXxqb/20230225_054435.png" style="border-radius:8px">
+<br>Pulsa</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/rsqmvZZL/20230226-165657.png" style="border-radius:8px">
+<br>Paket Data</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/bNvhLMzj/20230226-131941.png" style="border-radius:8px">
+<br>Voucher Data</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/3x4HQv4S/20230226-131601.png" style="border-radius:8px">
+<br>Token PLN</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/FsnQ6ZRk/20230226_131845.png" style="border-radius:8px">
+<br>Game Online</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/TPG3y4G5/20230226-170608.png" style="border-radius:8px">
+<br>BPJS</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/fWCscZQK/20230226-131642.png" style="border-radius:8px">
+<br>PDAM</center>
+</div>
+</a>
+<a onclick="flamOpenDua()">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/mg5mfMLp/20230226-122036.png" style="border-radius:8px">
+<br>Lainnya</center>
+</div>
+</a>
+<br></div>
+</div>
+<br></div>
+<div id="flamBShadow" class="flamNone" onclick="flamClsDua4()"></div>
+<div id="flamPop">
+<div id="flamUp">
+<div style="padding: 2%;padding-top: 2.8%;padding-bottom: 2%;">
+<form role="search" id="form">
+<input type="search" id="query" name="q" placeholder="Cari Produk Apa?" aria-label="Search through site content"><button9><svg viewbox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button9>
+</form>
+</div>
+<div style="padding: 6%;padding-top: 0%;padding-bottom: 1%;overflow: scroll;height: 400px;">
+<h4 style="font-size:20px;font-weight: bold;border-radius: 5px;padding: 4px;color: black;margin: 0;">Isi Ulang <span class="flamFloatRight material-icons flam-setting-2">expand_more</span>
+<h1 style="font-size:12px;border-radius: 5px;padding: 4px;color: black;margin: 0;">Dengan Pupu Celluler Isi Ulang menjadi lebih mudah</h1>
+</h4>
+<hr>
+<br>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/pXqpXxqb/20230225_054435.png" style="border-radius:8px">
+<br>Pulsa</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/rsqmvZZL/20230226-165657.png" style="border-radius:8px">
+<br>Paket Data</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/bNvhLMzj/20230226-131941.png" style="border-radius:8px">
+<br>Voucher Data</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/3x4HQv4S/20230226-131601.png" style="border-radius:8px">
+<br>Token PLN</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/FsnQ6ZRk/20230226_131845.png" style="border-radius:8px">
+<br>Game Online</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/TPG3y4G5/20230226-170608.png" style="border-radius:8px">
+<br>BPJS</center>
+</div>
+</a>
+<a href="#">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/fWCscZQK/20230226-131642.png" style="border-radius:8px">
+<br>PDAM</center>
+</div>
+</a>
+<a onclick="flamOpenDua()">
+<div id="tooltip2">
+<center>
+<img class="imgs11" src="https://i.postimg.cc/mg5mfMLp/20230226-122036.png" style="border-radius:8px">
+<br>Lainnya</center>
+</div>
+</a>
+<br></div>
+</div>
+<br></div>
+</div>
+</div>
+<div class="Hr"></div>
+<div class="scrollmenu" style="margin-top: 10px;">
+<button class="button22" style="margin-top: 25px;"><img src="https://k.top4top.io/p_2172y2nm30.png" alt="AOV" class="image--game"/>
+<p class="title__card__body__menarik">Games</p>
+<h2 class="title__card__body__menarik">Free Fire</h2>
+<p class="deskripsi--card--game">.</p>
+<a href="#" class="link--open--game">Open</a></button>
+<button class="button22"><img src="https://imgbb.su/images/2022/01/01/d6bbcea22c739a1180cc2e1f227fb3e8.jpg" alt="AOV" class="image--game"/>
+<p class="title__card__body__menarik">Voucher</p>
+<h2 class="title__card__body__menarik">Garena Shell</h2>
+<p class="deskripsi--card--game">.</p>
+<a href="#" class="link--open--game">Open</a></button>
+<button class="button22"><img src="https://h.top4top.io/p_2172w4bbw0.jpeg" alt="AOV" class="image--game"/>
+<p class="title__card__body__menarik">Games</p>
+<h2 class="title__card__body__menarik">Mobile Legends</h2>
+<p class="deskripsi--card--game">.</p>
+<a href="#" class="link--open--game">Open</a></button>
+<button class="button22"><img src="https://c.top4top.io/p_2172f3uks0.jpg" alt="AOV" class="image--game"/>
+<p class="title__card__body__menarik">Games</p>
+<h2 class="title__card__body__menarik">Pubg Mobile</h2>
+<p class="deskripsi--card--game">.</p>
+<a href="#" class="link--open--game">Open</a></button>
+<button class="button22"><img src="https://imgbb.su/images/2022/01/01/65c186be8a905d45b9910232743a3523.md.jpg" alt="AOV" class="image--game"/>
+<p class="title__card__body__menarik">Voucher</p>
+<h2 class="title__card__body__menarik">Razer Gold</h2>
+<p class="deskripsi--card--game">.</p>
+<a href="#" class="link--open--game">Open</a></button>
+<button class="button22"><img src="https://imgbb.su/images/2022/01/01/fe4977073107ed279c54d36b64dff8bf.th.jpg" alt="AOV" class="image--game"/>
+<p class="title__card__body__menarik">Voucher</p>
+<h2 class="title__card__body__menarik">UniPin</h2>
+<p class="deskripsi--card--game">.</p>
+<a href="#" class="link--open--game">Open</a></button>
+<button class="button22"><img src="https://i.top4top.io/p_2173tspa30.png" alt="AOV" class="image--game"/>
+<p class="title__card__body__menarik">Voucher</p>
+<h2 class="title__card__body__menarik">XBOX</h2>
+<p class="deskripsi--card--game">.</p>
+<a href="#" class="link--open--game">Open</a></button>
+<button class="button22"><img src="https://d.top4top.io/p_2173xsjfd0.jpg" alt="AOV" class="image--game"/>
+<p class="title__card__body__menarik">Games</p>
+<h2 class="title__card__body__menarik">Sausage Man</h2>
+<p class="deskripsi--card--game">.</p>
+<a href="#" class="link--open--game">Open</a></button>
+</div>
+</br>
+</style>
+</div>
+</div>
+</div>
+<div class="Padd" style="padding-top: 0;">
+<div class="slideshow-container" style="border-radius:10px;background: transparent;">
+<div class="mySlides fadel " style="display: none;""">
+<img src="https://i.postimg.cc/qq8c5jF6/20230226-224859.jpg" alt="" style="width:100%;border-radius:5px;" border="0">
+</div>
+<div class="mySlides fadel" style="display: none;">
+<img src="https://i.postimg.cc/qq8c5jF6/20230226-224859.jpg" style="width:100%;border-radius:5px;" border="0">
+</div>
+<div class="mySlides fadel" style="display: block;">
+<img src="https://i.postimg.cc/qq8c5jF6/20230226-224859.jpg" style="width:100%;border-radius:5px;" border="0">
+</div>
+</div>
+<div style="background: transparent;">
+<div style="text-align:center">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot actives"></span>
+</div>
+</div>
+</div>
+<script>
+	var slideIndex = 0;
+showSlides();
+function showSlides() {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	slideIndex++;
+	if(slideIndex > slides.length) {
+		slideIndex = 1
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" actives", "");
+	}
+	slides[slideIndex - 1].style.display = "block";
+	dots[slideIndex - 1].className += " actives";
+	setTimeout(showSlides, 3000);
+}
+function flamOpenDua() {
+	document.getElementById("flamPop").style.bottom="0%";
+	document.getElementById("flamBShadow").style.display="block";
+}
+function flamClsDua4() {
+	document.getElementById("flamPop").style.bottom="-102%";
+	document.getElementById("flamBShadow").style.display="none";
+}
+</script> 
+<script> 
+const f = document.getElementById('form');
+const q = document.getElementById('query');
+const google = 'https://www.google.com/search?q=site%3A+';
+const site = 'pagedart.com';
+function submitted(event) {
+	event.preventDefault();
+	const url = google + site + '+' + q.value;
+	const win = window.open(url, '_blank');
+	win.focus();
+}
+f.addEventListener('submit', submitted);
+</script>
+ </body>
+ </html>
